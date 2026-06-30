@@ -1,0 +1,30 @@
+name: privacy_guard
+description: >-
+  A Flutter privacy protection SDK. Prevent screenshots, detect screen
+  recordings, blur app switcher previews, and protect sensitive widgets
+  with a clean, platform-aware API.
+version: 0.0.1
+homepage: https://github.com/Coderkube-App/privacy_guard
+repository: https://github.com/Coderkube-App/privacy_guard
+
+environment:
+  sdk: ^3.11.5
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.privacyguard.privacy_guard
+        pluginClass: PrivacyGuardPlugin
+      ios:
+        pluginClass: PrivacyGuardPlugin

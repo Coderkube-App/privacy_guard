@@ -1,0 +1,5 @@
+analyzer:
+  errors:
+    unused_import: ignore
+    unused_field: ignore
+    argument_type_not_assignable: error
