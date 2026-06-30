@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdk 34
+
+    namespace = "com.privacyguard.privacy_guard"
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 34
+    }
+
+    lint {
+        disable "InvalidPackage"
+    }
+}
+
+dependencies {
+    implementation "androidx.annotation:annotation:1.9.1"
+}
